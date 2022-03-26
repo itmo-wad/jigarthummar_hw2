@@ -10,7 +10,7 @@ app.config['MONGO_URI'] = 'mongodb://localhost:27017/users'
 mongo = PyMongo(app)
 
 @app.route("/")
-@app.route("/main")
+@app.route("/profile")
 def main():
     return render_template('index.html')
 
